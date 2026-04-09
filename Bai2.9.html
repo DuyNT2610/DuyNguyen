@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tin tức 24H</title>
+
+<style>
+body {
+    width: 90%;
+    margin: auto;
+    font-family: Arial;
+    background: #f9f9f9;
+}
+
+.header {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    background: #ff6600;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    background: #e6f2ff;
+}
+
+.left {
+    width: 30%;
+}
+
+.center {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.right {
+    width: 30%;
+}
+
+/* input chung */
+.center input,
+.center select,
+.center textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+/* textarea */
+.center textarea {
+    height: 100px;
+}
+
+/* giới tính ngang */
+.gender {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* radio không full width */
+.center input[type="radio"] {
+    width: auto;
+}
+
+/* nút */
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="submit"] {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+input[type="reset"] {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+.footer {
+    background: #003366;
+    color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>TIN TỨC 24H</h1>
+</div>
+
+<div class="menu">
+    <ul>
+        <li><a href="#">Giáo dục</a></li>
+        <li><a href="#">Thể thao</a></li>
+        <li><a href="#">Sức khỏe</a></li>
+        <li><a href="#">Xã hội</a></li>
+        <li><a href="#">Chính trị</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</div>
+
+<div class="container">
+
+<div class="left">
+    <p>Họ tên *</p>
+    <p>Địa chỉ</p>
+    <p>SĐT *</p>
+    <p>Giới tính</p>
+    <p>Năm sinh</p>
+    <p>Nội dung *</p>
+</div>
+
+<div class="center">
+<form>
+    <input type="text" placeholder="Họ tên">
+    <input type="text" placeholder="Địa chỉ">
+    <input type="tel" placeholder="Số điện thoại">
+
+    <div class="gender">
+        <label><input type="radio" name="gt"> Nam</label>
+        <label><input type="radio" name="gt"> Nữ</label>
+        <label><input type="radio" name="gt"> Khác</label>
+    </div>
+
+    <select>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+    </select>
+
+    <textarea placeholder="Nội dung góp ý..."></textarea>
+
+    <div class="btn">
+        <input type="submit" value="Gửi">
+        <input type="reset" value="Nhập lại">
+    </div>
+</form>
+</div>
+
+<div class="right">
+    <h3>Danh mục</h3>
+    <ul>
+        <li><a href="#">Tin thị trường</a></li>
+        <li><a href="#">Tin trong ngày</a></li>
+        <li><a href="#">Chứng khoán</a></li>
+    </ul>
+</div>
+
+</div>
+
+<div class="footer">
+    © 24h.com
+</div>
+
+</body>
+</html>
