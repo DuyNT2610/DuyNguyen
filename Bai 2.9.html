@@ -71,7 +71,10 @@
             width: 30%;
             padding-left: 20px;
         }
-        
+        .gender {
+    display: flex;
+    gap: 20px;
+}
         .center form {
     display: flex;
     flex-wrap: wrap;
@@ -152,12 +155,11 @@
                 <input type="text" placeholder="Địa chỉ">
                 <input type="tel" placeholder="Số điện thoại">
                 
-                <div>
-                    <input type="radio" name="gt" id="nam"> <label for="nam">Nam</label> 
-                    <input type="radio" name="gt" id="nu"> <label for="nu">Nữ</label> 
-                     <input type="radio" name="gt" id="Khac"> <label for="nam">Khác</label> 
-                </div>
-
+               <div class="gender">
+                <label><input type="radio" name="gt"> Nam</label>
+                <label><input type="radio" name="gt"> Nữ</label>
+                <label><input type="radio" name="gt"> Khác</label>
+            </div>
                 <select>
                     <option>2003</option>
                     <option>2004</option>
