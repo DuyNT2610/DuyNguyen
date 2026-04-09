@@ -98,7 +98,20 @@ body {
 .center input[type="radio"] {
     width: auto;
 }
+/* Cho header làm mốc */
+.header {
+    position: relative;
+}
 
+/* Ảnh nằm góc trái */
+.header img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+}
 .btn {
     display: flex;
     gap: 10px;
@@ -148,6 +161,7 @@ input[type="reset"] {
 <body>
 
 <div class="header">
+    <img src="https://yt3.ggpht.com/a/AATXAJzZaw2Grz5hEzxECcfhg_9yuQFRKzSnAiESwA=s900-c-k-c0xffffffff-no-rj-mo">
     <h1>TIN TỨC 24H</h1>
 </div>
 
