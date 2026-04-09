@@ -17,7 +17,10 @@ body {
     background: #003366;
     color: white;
     text-align: center;
-    padding: 20px;
+    position: relative;
+    height: 100px;   /* bắt buộc có */
+    line-height: 100px;
+}
 }
 .menu {
             background-color: #ff6600;
@@ -98,17 +101,11 @@ body {
 .center input[type="radio"] {
     width: auto;
 }
-/* Cho header làm mốc */
-.header {
-    position: relative;
-}
 
-/* Ảnh nằm góc trái */
 .header img {
     position: absolute;
     left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10px;
     width: 80px;
     height: 80px;
 }
